@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">TFLite StraterApp</string>
+    <string name="inference">Inference</string>
+    <string name="value"></string>
+    <string name="hint_value">Enter value</string>
+    <string name="text_view"></string>
+
+</resources>
