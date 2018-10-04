@@ -1,10 +1,10 @@
 # Notes on keras_to_tensorflow lite conversion
 
-This tutoriels details the use of TOCO converter to convert to tensorflow lite format for mobile applications
+This tutorial details the use of the TOCO converter to convert from a keras model to a tensorflow lite format for mobile application
 
 ## running tensorflow docker image
 
-link ()[<https://www.youtube.com/watch?v=W3bk2pojLoU>]
+[youtube tutorial video](<https://www.youtube.com/watch?v=W3bk2pojLoU>)
 
 1. Download the official tensorflow image
 
@@ -25,20 +25,20 @@ link ()[<https://www.youtube.com/watch?v=W3bk2pojLoU>]
 
 ## Debug
 
-* Error
+* error
 
     ```md
         Error response from daemon: error while creating mount source path '/host_mnt/c/Users/maiza/Desktop/test_keras_to_tf': mkdir /host_mnt/c: file exists.
     ```
 
-* Solution
+* solution
 
     ```shell
     docker volume rm -f tf
     ```
 then restart docker
 
-* link for the solution ()[<https://github.com/docker/for-win/issues/1560]>
+* [link for the solution](<https://github.com/docker/for-win/issues/1560]>)
 
 ## upgrade tensorflow
 
@@ -54,15 +54,15 @@ then restart docker
     pip install --upgrade tensorflow
     ```
 
-## importants links
+## Important links
 
-```shell
-https://www.youtube.com/watch?v=RhjBDxpAOIc
+* [link 1](<https://www.youtube.com/watch?v=RhjBDxpAOIc>)
 
-https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/lite/toco/g3doc/python_api.md#exporting-a-savedmodel-
-```
+* [link 2](<https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/lite/toco/g3doc/python_api.md#exporting-a-savedmodel->)
 
 ## Starter Exemple from documentation
+
+`TODO` Check for tensorflow version for problem solving
 
 there is a problem in the converted tflite model. It works but it gives wrong results
 
@@ -171,4 +171,4 @@ and the *output_arrays* in this case is  *dense_1/BiasAdd*
 
 ### debug
 
-1. check always input_arrays and output_arrays
+1. check always input_arrays and output_arrays shapes
